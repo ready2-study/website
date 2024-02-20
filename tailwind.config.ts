@@ -10,20 +10,6 @@ const config = {
   ],
   prefix: "",
   theme: {
-    colors: {
-      primary: {
-        DEFAULT: "#353535",
-        dark: "#272727",
-      },
-      secondary: {
-        DEFAULT: "#ffffff",
-        dark: "#e8e8e8",
-      },
-      additional: {
-        DEFAULT: "#892DFF",
-        dark: "#6E20D1",
-      },
-    },
     container: {
       center: true,
       padding: "2rem",
@@ -32,6 +18,20 @@ const config = {
       },
     },
     extend: {
+      colors: {
+        primary: {
+          DEFAULT: "#353535",
+          dark: "#272727",
+        },
+        secondary: {
+          DEFAULT: "#ffffff",
+          dark: "#e8e8e8",
+        },
+        additional: {
+          DEFAULT: "#892DFF",
+          dark: "#6E20D1",
+        },
+      },
       spacing: {
         box: "1180px",
       },
