@@ -3,15 +3,17 @@
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 
+type UnderlineProps = {
+  linkName: string;
+  widthProp: number;
+  heightProp: number;
+};
+
 export default function Underline({
   linkName,
   widthProp,
   heightProp,
-}: {
-  linkName: string;
-  widthProp: number;
-  heightProp: number;
-}) {
+}: UnderlineProps) {
   const path = usePathname();
 
   return (
