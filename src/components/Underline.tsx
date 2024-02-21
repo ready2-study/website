@@ -27,7 +27,7 @@ export default function Underline({
           className={path === linkName ? "block" : "hidden"}
         />
       ) : (
-        <div className={`w-[${widthProp}px] h-[${heightProp}px]`} />
+        <div className={`w-[${widthProp}px] h-[28px]`} />
       )}
     </div>
   );
