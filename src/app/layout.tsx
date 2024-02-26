@@ -3,6 +3,7 @@ import { IBM_Plex_Sans, Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/additional/navbar/Navbar";
+import Image from "next/image";
 
 const ibm = IBM_Plex_Sans({
   weight: ["700", "400", "300"],
@@ -21,13 +22,18 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      className={cn(
-        "bg-primary bg-[url('../../public/Background.png')] bg-no-repeat bg-cover text-secondary flex flex-col antialiased",
-        ibm.className,
-      )}
+      className={cn("bg-primary text-secondary flex flex-col", ibm.className)}
       lang="en"
     >
       <body>
+        <Image
+          src="/Background.png"
+          width={500}
+          height={500}
+          priority={true}
+          alt="bg"
+          className="pointer-events-none absolute top-0 left-0  w-full h-full -z-20"
+        />
         <Navbar />
         <div className="mx-auto">{children}</div>
       </body>

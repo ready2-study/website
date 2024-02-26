@@ -26,11 +26,11 @@ interface StatisticProps {
 
 const Statistic = ({ name, count, imageString }: StatisticProps) => {
   return (
-    <div>
-      <Image src={imageString} width={50} height={50} alt={name} />
-      <div>
-        <h1>{count}</h1>
-        <p>{name}</p>
+    <div className="flex flex-row items-center justify-center mx-20 mt-10 mb-5">
+      <Image src={imageString} width={100} height={100} alt={name} />
+      <div className="text-center m-5">
+        <h1 className="text-additional text-5xl">{count}</h1>
+        <p className="text-lg">{name}</p>
       </div>
     </div>
   );
@@ -38,9 +38,9 @@ const Statistic = ({ name, count, imageString }: StatisticProps) => {
 
 export default function Info() {
   return (
-    <div>
-      <h1>We already support</h1>
-      <div>
+    <div className="bg-black p-16 font-bold flex flex-col items-center justify-center">
+      <h1 className="text-6xl">We already support</h1>
+      <div className="flex flex-row">
         {statistics.map((statistic: StatisticProps) => (
           <Statistic
             key={statistic.name}
@@ -50,7 +50,7 @@ export default function Info() {
           />
         ))}
       </div>
-      <Image src="/underline.svg" width={1000} height={400} alt="Underline" />
+      <Image src="/underline.svg" width={1000} height={160} alt="Underline" />
     </div>
   );
 }

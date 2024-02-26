@@ -10,7 +10,7 @@ const navNames: string[] = ["Questions", "Tutoring", "About"];
 const NavigationLink = ({ linkName }: { linkName: string }) => {
   return (
     <Link
-      className="flex flex-col min-w-[70px] items-center text-sm mx-5"
+      className="flex flex-col min-w-[70px] items-center text-lg mx-8"
       href={`/${linkName.toLowerCase()}`}
     >
       <div className="pt-[28px]">{linkName}</div>
@@ -63,7 +63,7 @@ const AuthSection = () => {
 
 export default function Navbar() {
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center w-screen p-5">
       <div className="w-box font-bold flex items-center justify-between">
         <Navigation />
         <AuthSection />
