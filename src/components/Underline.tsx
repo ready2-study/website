@@ -21,13 +21,14 @@ export default function Underline({
       {path === linkName ? (
         <Image
           src="underline.svg"
+          sizes="100vw"
           width={widthProp}
           height={heightProp}
           alt="underline"
           className={path === linkName ? "block" : "hidden"}
         />
       ) : (
-        <div className={`w-[${widthProp}px] h-[28px]`} />
+        <div className={`w-[20px] h-[27px]`} />
       )}
     </div>
   );
