@@ -2,8 +2,8 @@ import Link from "next/link";
 import React from "react";
 import Underline from "./Underline";
 import Languages from "./Languages";
-import { buttonVariants } from "./ui/button";
 import { cn } from "@/lib/utils";
+import { buttonVariants } from "@/components/ui/button";
 
 const navNames: string[] = ["Questions", "Tutoring", "About"];
 
