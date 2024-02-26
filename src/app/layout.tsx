@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { IBM_Plex_Sans, Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/additional/navbar/Navbar";
 
 const ibm = IBM_Plex_Sans({
   weight: ["700", "400", "300"],
