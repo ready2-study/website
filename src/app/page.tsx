@@ -1,5 +1,5 @@
 import Hero from "@/components/pages/main/Hero";
-import Info from "@/components/pages/main/Info";
+import Info from "@/components/pages/main/info/Info";
 import Universities from "@/components/pages/main/Universities";
 
 export default function Home() {

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Counter } from "./Counter";
 
 const statistics: StatisticProps[] = [
   {
@@ -29,7 +30,7 @@ const Statistic = ({ name, count, imageString }: StatisticProps) => {
     <div className="flex flex-row items-center justify-center mx-20 mt-10 mb-5">
       <Image src={imageString} width={100} height={100} alt={name} />
       <div className="text-center m-5">
-        <h1 className="text-additional text-5xl">{count}</h1>
+        <Counter maxCount={count} />
         <p className="text-lg">{name}</p>
       </div>
     </div>
