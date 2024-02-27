@@ -26,9 +26,10 @@ export default function Underline({
           height={heightProp}
           alt="underline"
           className={path === linkName ? "block" : "hidden"}
+          priority={true}
         />
       ) : (
-        <div className={`w-[20px] h-[27px]`} />
+        <div className={`w-[26px] h-[27px]`} />
       )}
     </div>
   );

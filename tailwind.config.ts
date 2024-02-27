@@ -20,8 +20,8 @@ const config = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#353535",
-          dark: "#272727",
+          DEFAULT: "#232323",
+          dark: "#202020",
         },
         secondary: {
           DEFAULT: "#ffffff",
