@@ -55,7 +55,7 @@ export const Counter = ({ maxCount }: { maxCount: number }) => {
     }
   }, [shouldCount, maxCount]);
   return (
-    <div ref={counterRef} className="text-additional text-4xl">
+    <div ref={counterRef} className="text-additional text-5xl">
       {currVal}
     </div>
   );
