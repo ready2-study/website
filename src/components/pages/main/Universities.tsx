@@ -1,3 +1,4 @@
+import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 
 // put the longest string on top
@@ -47,7 +48,7 @@ const UniversitiesBox = () => {
       </div>
       <Link
         href="/questions"
-        className="p-4 m-8 bg-secondary hover:bg-secondary-dark text-3xl text-additional hover:text-additional-dark transition duration-300 ease-in-out cursor-pointer rounded rounded-4xl"
+        className={buttonVariants({ size: "lg", className: "w-[400px] m-10" })}
       >
         See More
       </Link>
@@ -57,7 +58,7 @@ const UniversitiesBox = () => {
 
 export default function Universities() {
   return (
-    <div className="bg-[url('../../public/Noise.jpeg')] flex items-center justify-center bg-secondary font-bold text-secondary p-20 z-50">
+    <div className="bg-[url('../../public/Noise.svg')] flex items-center justify-center bg-primary font-bold text-secondary p-20 z-50">
       <UniversitiesBox />
     </div>
   );
