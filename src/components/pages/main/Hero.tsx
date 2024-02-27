@@ -12,7 +12,7 @@ export default function Hero() {
             height={500}
             priority={true}
             alt="bg"
-            className="pointer-events-none absolute top-0 left-0  w-full h-full -z-20"
+            className="pointer-events-none absolute top-0 left-0  w-full h-[1010px] -z-20"
           />
           <h1 className="font-bold text-7xl max-w-[900px] text-center inline-block">
             Study for your exams{" "}

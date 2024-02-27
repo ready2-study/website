@@ -26,14 +26,6 @@ export default function RootLayout({
       lang="en"
     >
       <body>
-        <Image
-          src="/Background.png"
-          width={500}
-          height={500}
-          priority={true}
-          alt="bg"
-          className="pointer-events-none absolute top-0 left-0  w-full h-full -z-20"
-        />
         <Navbar />
         <div className="mx-auto">{children}</div>
       </body>
