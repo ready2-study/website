@@ -4,6 +4,7 @@ import Underline from "./Underline";
 import Languages from "./Languages";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
+import { MobileNavigation } from "./MobileNavigation";
 
 const navNames: string[] = ["Questions", "Tutoring", "About"];
 
@@ -14,11 +15,7 @@ const NavigationLink = ({ linkName }: { linkName: string }) => {
       href={`/${linkName.toLowerCase()}`}
     >
       <div className="pt-[28px]">{linkName}</div>
-      <Underline
-        linkName={`/${linkName.toLowerCase()}`}
-        widthProp={70}
-        heightProp={10}
-      />
+      <Underline linkName={linkName} widthProp={70} heightProp={10} />
     </Link>
   );
 };
@@ -31,9 +28,9 @@ const Navigation = () => {
         <div className="flex text-3xl pt-[28px]">
           Ready2<div className="text-additional">.Study</div>
         </div>
-        <Underline linkName="/" widthProp={190} heightProp={27} />
+        <Underline linkName="" widthProp={190} heightProp={27} />
       </Link>
-      <div className="flex mx-5">
+      <div className="hidden xl:flex mx-5">
         {navNames.map((name: string) => (
           <NavigationLink key={name} linkName={name} />
         ))}
@@ -44,7 +41,7 @@ const Navigation = () => {
 
 const AuthSection = () => {
   return (
-    <div className="flex items-center justify-center">
+    <div className="hidden xl:flex items-center justify-center">
       <Languages />
       <div className="flex items-center justify-center">
         <Link
@@ -67,6 +64,7 @@ export default function Navbar() {
       <div className="w-box font-bold flex items-center justify-between">
         <Navigation />
         <AuthSection />
+        <MobileNavigation />
       </div>
     </div>
   );

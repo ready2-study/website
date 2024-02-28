@@ -15,10 +15,11 @@ export default function Underline({
   heightProp,
 }: UnderlineProps) {
   const path = usePathname();
+  const formattedLinkName = "/" + linkName.toLowerCase();
 
   return (
     <div>
-      {path === linkName ? (
+      {formattedLinkName === path ? (
         <Image
           src="underline.svg"
           sizes="100vw"
