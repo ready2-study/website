@@ -25,7 +25,6 @@ export default function Underline({
           width={widthProp}
           height={heightProp}
           alt="underline"
-          className={path === linkName ? "block" : "hidden"}
           priority={true}
         />
       ) : (
