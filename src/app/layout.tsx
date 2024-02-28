@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/additional/navbar/Navbar";
 import Image from "next/image";
+import Footer from "@/components/additional/footer/Footer";
 
 const ibm = IBM_Plex_Sans({
   weight: ["700", "400", "300"],
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body>
         <Navbar />
         <div className="mx-auto">{children}</div>
+        <Footer />
       </body>
     </html>
   );
