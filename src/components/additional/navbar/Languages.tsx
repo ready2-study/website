@@ -48,7 +48,7 @@ const Languages = () => {
           />
         </div>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-56">
+      <DropdownMenuContent className="w-56 hidden xl:block">
         <DropdownMenuLabel>Select language</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuRadioGroup value={language} onValueChange={setLanguage}>
