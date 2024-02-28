@@ -11,7 +11,7 @@ const navNames: string[] = ["Questions", "Tutoring", "About"];
 const NavigationLink = ({ linkName }: { linkName: string }) => {
   return (
     <Link
-      className="flex flex-col min-w-[70px] items-center text-lg mx-8"
+      className="flex flex-col min-w-[70px] items-center text-lg mx-8 hover:text-secondary-dark duration-300 ease-in-out cursor-pointer"
       href={`/${linkName.toLowerCase()}`}
     >
       <div className="pt-[28px]">{linkName}</div>
@@ -25,7 +25,7 @@ const Navigation = () => {
     <div className="flex items-center">
       <Link href="/" className="flex flex-col items-center">
         {/* not the perfect solution but im not sure how to do it better*/}
-        <div className="flex text-3xl pt-[28px]">
+        <div className="flex text-3xl pt-[28px] hover:text-secondary-dark duration-300 ease-in-out cursor-pointer">
           Ready2<div className="text-additional">.Study</div>
         </div>
         <Underline linkName="" widthProp={190} heightProp={27} />
