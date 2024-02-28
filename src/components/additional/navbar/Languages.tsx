@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -15,8 +15,6 @@ import {
 import { useState } from "react";
 
 const flagDemention: number = 20;
-const unknownFlagUrl: string =
-  "https://utfs.io/f/4a917086-b96b-4cd7-818c-91bb8e6531e8-go1iru.png";
 
 const countries: string[] = ["English", "Polish"];
 
