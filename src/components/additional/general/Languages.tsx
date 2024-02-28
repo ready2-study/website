@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { buttonVariants } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -12,7 +11,8 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-import { useState } from "react";
+import { ReactNode, useContext } from "react";
+import { LanguageContext } from "@/components/context/LanguageContext";
 
 const flagDemention: number = 20;
 
@@ -33,21 +33,12 @@ const Country = ({ country }: { country: string }) => {
   );
 };
 
-const Languages = () => {
-  const [language, setLanguage] = useState<string>("English");
+const Languages = ({ trigger }: { trigger: ReactNode }) => {
+  const { language, setLanguage } = useContext(LanguageContext);
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <div className={buttonVariants({ variant: "ghost" })}>
-          <Image
-            src={`/flags/${language}Flag.png`}
-            width={35}
-            height={17}
-            alt="Language"
-          />
-        </div>
-      </DropdownMenuTrigger>
+      <DropdownMenuTrigger asChild>{trigger}</DropdownMenuTrigger>
       <DropdownMenuContent className="w-56 hidden xl:block">
         <DropdownMenuLabel>Select language</DropdownMenuLabel>
         <DropdownMenuSeparator />

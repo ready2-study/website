@@ -1,10 +1,10 @@
 import Link from "next/link";
 import React from "react";
 import Underline from "./Underline";
-import Languages from "./Languages";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
 import { MobileNavigation } from "./MobileNavigation";
+import LanguagesNavbar from "./LanguagesNavbar";
 
 const navNames: string[] = ["Questions", "Tutoring", "About"];
 
@@ -42,7 +42,7 @@ const Navigation = () => {
 const AuthSection = () => {
   return (
     <div className="hidden xl:flex items-center justify-center">
-      <Languages />
+      <LanguagesNavbar />
       <div className="flex items-center justify-center">
         <Link
           href="/log-in"
