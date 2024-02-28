@@ -39,9 +39,11 @@ const Languages = ({ trigger }: { trigger: ReactNode }) => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>{trigger}</DropdownMenuTrigger>
-      <DropdownMenuContent className="w-56 hidden xl:block">
-        <DropdownMenuLabel>Select language</DropdownMenuLabel>
-        <DropdownMenuSeparator />
+      <DropdownMenuContent className="w-56">
+        <div className="xl:block hidden">
+          <DropdownMenuLabel>Select language</DropdownMenuLabel>
+          <DropdownMenuSeparator />
+        </div>
         <DropdownMenuRadioGroup value={language} onValueChange={setLanguage}>
           {countries.map((country: string) => (
             <Country key={country} country={country} />
