@@ -16,7 +16,7 @@ import { LanguageContext } from "@/components/context/LanguageContext";
 
 const flagDemention: number = 20;
 
-const countries: string[] = ["English", "Polish"];
+const countries: string[] = ["English", "Polski"];
 
 const Country = ({ country }: { country: string }) => {
   return (
