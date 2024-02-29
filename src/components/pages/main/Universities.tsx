@@ -48,7 +48,10 @@ const UniversitiesBox = () => {
       </div>
       <Link
         href="/questions"
-        className={buttonVariants({ size: "lg", className: "w-[400px] m-10" })}
+        className={buttonVariants({
+          size: "lg",
+          className: "max-w-[400px] m-10",
+        })}
       >
         See More
       </Link>
