@@ -34,7 +34,8 @@ const config = {
       },
       spacing: {
         box: "1180px",
-        boxTablet: "900px",
+        boxTablet: "600px",
+        boxPhone: "400px",
       },
       keyframes: {
         "accordion-down": {

@@ -40,8 +40,8 @@ const Statistic = ({ name, count, imageString }: StatisticProps) => {
 export default function Info() {
   return (
     <div className="bg-black p-16 font-bold flex flex-col items-center justify-center">
-      <h1 className="text-6xl">We already support</h1>
-      <div className="flex flex-row">
+      <h1 className="text-center text-6xl">We already support</h1>
+      <div className="flex flex-row flex-wrap items-center justify-center">
         {statistics.map((statistic: StatisticProps) => (
           <Statistic
             key={statistic.name}
