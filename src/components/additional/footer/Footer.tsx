@@ -1,4 +1,5 @@
 import Link from "next/link";
+import LanguagesFooter from "./LanguagesFooter";
 
 export default function Footer() {
   return (
@@ -51,7 +52,7 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-        <div className="pt-5 pb-10">
+        <div className="pt-5 pb-10 flex items-center justify-between">
           <div className="font-light text-sm leading-4 text-secondary-dark">
             Ready2.study is not affiliated to or endorsed by any school, college
             or university
@@ -59,7 +60,9 @@ export default function Footer() {
             <br />
             Copyright © 2024
           </div>
-          <div>{/* todo: laguages chooser in footer */}</div>
+          <div>
+            <LanguagesFooter />
+          </div>
         </div>
       </div>
     </div>

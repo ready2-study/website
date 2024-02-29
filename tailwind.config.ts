@@ -25,7 +25,7 @@ const config = {
         },
         secondary: {
           DEFAULT: "#ffffff",
-          dark: "#e8e8e8",
+          dark: "#c0c0c0",
         },
         additional: {
           DEFAULT: "#892DFF",
@@ -34,6 +34,7 @@ const config = {
       },
       spacing: {
         box: "1180px",
+        boxTablet: "900px",
       },
       keyframes: {
         "accordion-down": {
