@@ -35,13 +35,13 @@ const University = ({ name }: { name: string }) => {
 
 const UniversitiesBox = () => {
   return (
-    <div className="flex flex-col items-center justify-center w-[1000px] bg-black bg-opacity-70 rounded rounded-[50px]">
+    <div className="flex flex-col items-center justify-center max-w-[1000px] bg-black bg-opacity-70 rounded-[50px] text-center">
       <div>
         <h1 className="m-8 p-4 text-6xl border-b-4 border-additional flex justify-center items-center">
           Available Universities
         </h1>
       </div>
-      <div className="flex w-[900px] flex-wrap items-center justify-center">
+      <div className="flex max-w-[900px] flex-wrap items-center justify-center">
         {universitiesArr.map((uni: string) => (
           <University key={uni} name={uni} />
         ))}
