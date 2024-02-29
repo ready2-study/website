@@ -8,8 +8,8 @@ export default function Hero() {
         <div className="flex flex-col items-center justify-center">
           <Image
             src="/Background.png"
-            width={500}
-            height={500}
+            width={1000}
+            height={1000}
             priority={true}
             alt="bg"
             className="pointer-events-none absolute top-0 left-0  w-full h-[1010px] -z-20"
